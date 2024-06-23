@@ -1,7 +1,10 @@
+footer{
+    background-color: hsl(210, 14%, 95%);
+
+}
 .footer {
     display: flex;
     padding: 20px;
-    background-color: hsl(210, 14%, 95%);
     font-family: Arial, sans-serif;
     height: 80vh;
 }
@@ -11,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 
@@ -50,13 +53,22 @@
 
 .contact-info {
     display: flex;
+    flex-direction: row;
     gap: 10px;
 }
-.contact-info-itm{
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    color: black;
+    gap: 10px;
+}
+.contact-info-item-number{
     display: block;
 }
 .contact-info div {
-    display: flex;
+    display: block;
+    gap: 10px;
     color: black;
 }
 
