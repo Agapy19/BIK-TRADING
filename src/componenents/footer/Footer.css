@@ -1,0 +1,79 @@
+.footer {
+    display: flex;
+    padding: 20px;
+    background-color: hsl(210, 14%, 95%);
+    font-family: Arial, sans-serif;
+    height: 80vh;
+}
+
+.footer-left,
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+
+.footer-center {
+    background-image: url('/public/Images/logobik.jpg');
+    background-repeat: no-repeat; /* Ajout de cette ligne */
+    background-size: 110%;
+    background-position: center center;
+    text-align: center;
+    opacity: 0.2; /* Opacité appliquée à toute la section */
+    border: 4px solid rgba(128, 128, 128, 0.397);
+    border-radius: 50%;
+    margin-left: 10%;
+    height: 100%;
+}
+
+
+
+.footer-center h2 {
+    font-size: 24px;
+    color: #1E90FF;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-left: 125%;
+    margin-top: 20%;
+    opacity: 1
+
+}
+
+.footer-center h2 span {
+    color: black; /* Couleur du texte "SARL" en noir */
+}
+
+.contact-info {
+    display: flex;
+    gap: 10px;
+}
+.contact-info-itm{
+    display: block;
+}
+.contact-info div {
+    display: flex;
+    color: black;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #1E90FF;
+}
+
+.contact-info span {
+    font-size: 14px;
+}
+
+.logo {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 3px solid rgba(128, 128, 128, 0.701);
+    margin-left: 190%;
+    margin-top: 20%;
+}

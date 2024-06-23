@@ -1,0 +1,74 @@
+.about-us-page{
+    background-image: url(/public/Images/about.jpg);
+    display: grid;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+.about-page__item{
+    margin-left: 10%;
+    width: 80%;
+    height: 50vh;
+    margin-top: -50px;
+    gap: 2%;
+    background: #fff;
+    border-radius: 2%;
+    border: 1px solid var(--border-color);
+}
+
+.about-page-philosophy{
+    display: grid;
+    height: 100vh;
+}
+.title{
+    font-size: 20px;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.about-page-philosophy__philosophy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-page-philosophy__vision,
+.about-page-philosophy__mision,
+.about-page-philosophy__value {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-top: -10%;
+}
+.about-page-philosophy__vision {
+    background-color: #00bfff;
+    top: 0;
+    left: 5%;
+    transform: translate(4%, 0);
+    z-index: 2;
+}
+
+.about-page-philosophy__mision {
+    background-color: #1e90ff;
+    top: 50%;
+    left: 25%;
+    transform: translate(90%, -1%);
+    z-index: 2;
+     
+}
+
+.about-page-philosophy__value {
+    background-color:#00ff7f ;
+    top: 50%;
+    left: 75%;
+    transform: translate(-105%, -5%);
+    z-index: 1;
+}
