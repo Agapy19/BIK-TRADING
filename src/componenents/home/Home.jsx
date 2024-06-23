@@ -2,7 +2,7 @@ import './Home.css';
 import { BiWorld } from "react-icons/bi";
 import { FaHandsHelping } from "react-icons/fa";
 import { GiFamilyHouse } from "react-icons/gi";
-import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai"; // Import AiOutlineDownload icon
+import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai"; 
 const PDF = process.env.PUBLIC_URL + '/Images/COMPANY PROFILE BIK T.pdf';
 
 function Home() {

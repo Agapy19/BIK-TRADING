@@ -18,7 +18,7 @@
 
 .footer-center {
     background-image: url('/public/Images/logobik.jpg');
-    background-repeat: no-repeat; /* Ajout de cette ligne */
+    background-repeat: no-repeat; 
     background-size: 110%;
     background-position: center center;
     text-align: center;

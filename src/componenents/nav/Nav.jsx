@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Nav.css'; // Importer votre fichier CSS pour la navigation
+import './Nav.css'; 
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Fonction pour basculer l'état du menu ouvert/fermé
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Fonction pour fermer le menu lorsque l'utilisateur clique sur un lien
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -18,7 +16,6 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo */}
         <Link to="/" className="navbar-logo">
           <img src={process.env.PUBLIC_URL + '/Images/logobik.jpg'} alt="BIK TRADING SARL" className="logo-img" />
         </Link>
@@ -29,7 +26,6 @@ const Nav = () => {
           <div className={isMenuOpen ? 'hamburger-menu open' : 'hamburger-menu'}></div>
         </div>
 
-        {/* Menu Links */}
         <ul className={isMenuOpen ? 'nav-menu open' : 'nav-menu'}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMenu}>
