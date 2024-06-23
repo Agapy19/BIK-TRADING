@@ -384,6 +384,25 @@ button:hover {
     background-blend-mode: overlay; 
     transition: background-size 0.3s ease-in-out;
 }
+.home-page-presentation-grid4-btn{
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 60%;
+}
+.home-page-presentation-grid4-btn:hover{
+    border: none;
+    outline: none;
+    color: #1e90ff;
+    background: transparent;
+}
 .home-page-presentation-grid5{
     align-items: center;
     background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);

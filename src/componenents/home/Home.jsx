@@ -2,7 +2,7 @@ import './Home.css';
 import { BiWorld } from "react-icons/bi";
 import { FaHandsHelping } from "react-icons/fa";
 import { GiFamilyHouse } from "react-icons/gi";
-import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai"; 
+import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai";
 const PDF = process.env.PUBLIC_URL + '/Images/COMPANY PROFILE BIK T.pdf';
 
 function Home() {
@@ -117,7 +117,11 @@ function Home() {
                         <button className='home-page-presentation-grid3-btn'>Learn More</button>
                     </div>
                     <div className='home-page-presentation-grid4'>
-                        <button>Contact us</button>
+                        <button className='home-page-presentation-grid4-btn'>
+                            Contact us
+                            <AiOutlineArrowRight className='icone' />
+
+                        </button>
                     </div >
                     <div className='home-page-presentation-grid5'>
                         <h2>90% of employees would recommend to a friend</h2>
@@ -132,9 +136,9 @@ function Home() {
                         Download pdf
                         <AiOutlineDownload className='download-icon' />
                     </a>
-                    
+
                 </div>
-                
+
             </div>
         </div>
     )
