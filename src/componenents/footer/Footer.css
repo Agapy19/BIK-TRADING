@@ -22,7 +22,7 @@
     background-size: 110%;
     background-position: center center;
     text-align: center;
-    opacity: 0.2; /* Opacité appliquée à toute la section */
+    opacity: 0.2; 
     border: 4px solid rgba(128, 128, 128, 0.397);
     border-radius: 50%;
     margin-left: 10%;
@@ -45,7 +45,7 @@
 }
 
 .footer-center h2 span {
-    color: black; /* Couleur du texte "SARL" en noir */
+    color: black; 
 }
 
 .contact-info {
