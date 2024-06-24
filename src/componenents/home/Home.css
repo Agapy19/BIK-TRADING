@@ -160,7 +160,7 @@ button:hover {
 .founder-home-page {
     display: grid;
     margin-top: 5%;
-    background: hsl(210, 14%, 95%);
+    background: #f8f9fa;
     height: 90vh;
     width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -419,7 +419,7 @@ button:hover {
 }
 .home-page-pdf {
     display: flex;
-    background-color: hsl(210, 14%, 95%);
+    background-color: #f8f9fa;
     padding: 20px;
     color: bl;
     height: 100vh;
@@ -471,7 +471,15 @@ button:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
+    .home-page {
+        background-image: url(/public/Images/image3.jpeg);
+        display: grid;
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+    }
     .home-page__text {
         display: block;
         justify-content: center;
@@ -481,8 +489,7 @@ button:hover {
     }
 
     .home-page__text h2 {
-        color: #228B22;
-        font-weight: 600;
+        font-weight: 800;
         width: 100%;
         font-size: 25px;
     }
@@ -642,7 +649,6 @@ button:hover {
         display: flex;
         flex-direction: column;
         margin-top: 2%;
-        background: hsl(210, 14%, 95%);
         height: 120vh;
         width: 100%;
         grid-template-columns: 1fr 1fr;
@@ -651,7 +657,7 @@ button:hover {
     .founder-home-page__img img {
         width: 100%;
         margin-top: 20%;
-        height: 50vh;
+        height: 40vh;
         border-radius: 2%;
 
     }
@@ -701,5 +707,63 @@ button:hover {
     .profile-info {
         font-size: 15px;
     }
+    .home-page-presentation {
+        display: none;
+        height: 60vh;
+    }
+   
+        .home-page-pdf {
+        display: flex;
+        background-color: none;
+        padding: 10px;
+        height: 50vh;
+    }
+    
+    .home-page-pdf-div {
+        width: 80%;
+        height: 80%;
+        background-color: #FFFFFF;
+        margin: 0 auto; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+       
+    }
+    .home-page-pdf-div h2{
+        background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 100%;
+        text-align: center;
+        margin-top: 60px; 
+    }
+    .home-page-pdf-img img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .pdf {
+        color: #00bfff;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        margin-top: -50px;
+    }
+    
+    .pdf:hover {
+        text-decoration: underline;
+        color: #1e90ff;
+    }
+    
+    .download-icon {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    
+    
+    
 
 }

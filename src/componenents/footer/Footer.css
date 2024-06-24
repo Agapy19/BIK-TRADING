@@ -1,7 +1,8 @@
-footer{
+footer {
     background-color: hsl(210, 14%, 95%);
-
+    width: 100%;
 }
+
 .footer {
     display: flex;
     padding: 20px;
@@ -17,22 +18,18 @@ footer{
     margin-top: 2%;
 }
 
-
-
 .footer-center {
     background-image: url('/public/Images/logobik.jpg');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 110%;
     background-position: center center;
     text-align: center;
-    opacity: 0.2; 
+    opacity: 0.2;
     border: 4px solid rgba(128, 128, 128, 0.397);
     border-radius: 50%;
     margin-left: 10%;
     height: 100%;
 }
-
-
 
 .footer-center h2 {
     font-size: 24px;
@@ -43,44 +40,42 @@ footer{
     width: 100%;
     margin-left: 125%;
     margin-top: 20%;
-    opacity: 1
-
+    opacity: 1;
 }
 
 .footer-center h2 span {
-    color: black; 
+    color: black;
 }
 
 .contact-info {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: -5%;
 }
 
 .contact-info-item {
     display: flex;
     align-items: center;
-    color: black;
-    gap: 10px;
-}
-.contact-info-item-number{
-    display: block;
-}
-.contact-info div {
-    display: block;
     gap: 10px;
     color: black;
 }
 
 .icon {
-    margin-right: 10px;
     color: #1E90FF;
+    margin-right: 5px;
 }
 
-.contact-info span {
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details span {
     font-size: 14px;
 }
-
 .logo {
     width: 50%;
     height: 50%;
@@ -89,3 +84,135 @@ footer{
     margin-left: 190%;
     margin-top: 20%;
 }
+@media screen and (max-width: 1024px) {
+    .footer-center {
+        background-image: url('/public/Images/logobik.jpg');
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: center center;
+        text-align: center;
+        opacity: 0.3;
+        border: 4px solid rgba(128, 128, 128, 0.397);
+        border-radius: 50%;
+        margin-left: -50%;
+        height: 80%;
+    }
+    
+    .footer-center h2 {
+        font-size: 24px;
+        color: #1E90FF;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 5%;
+        opacity: 1;
+    }
+    .logo {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        border: 3px solid rgba(128, 128, 128, 0.701);
+        margin-left: 100%;
+        margin-top: 25%;
+    }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 20px; 
+        justify-content: center; 
+        align-items: center; 
+        margin-top: -30%;
+        margin-left: -30%;
+
+    }
+    
+    .contact-info-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: black;
+    }
+    
+    .icon {
+        color: #1E90FF;
+        margin-right: 5px;
+    }
+    
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-details span {
+        font-size: 14px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 700px) {
+    .footer-center {
+        background-image: url('/public/Images/logobik.jpg');
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: center center;
+        text-align: center;
+        opacity: 0.3;
+        border: 4px solid rgba(128, 128, 128, 0.397);
+        border-radius: 50%;
+        margin-left: -80%;
+        height: 80%;
+    }
+    
+    .footer-center h2 {
+        font-size: 24px;
+        color: #1E90FF;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 5%;
+        opacity: 1;
+    }
+    .logo {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        border: 3px solid rgba(128, 128, 128, 0.701);
+        margin-left: 90%;
+        margin-top: 25%;
+    }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px; 
+        justify-content: start; 
+        align-items: start; 
+        margin-top: -30%;
+        margin-left: -30%;
+    }
+
+    
+    .contact-info-item {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        color: black;
+    }
+    
+    .icon {
+        color: #1E90FF;
+        margin-right: 5px;
+    }
+    
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-details span {
+        font-size: 14px;
+    }
+  }

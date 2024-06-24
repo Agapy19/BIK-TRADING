@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Nav.css'; 
+import { Link, useLocation } from 'react-router-dom';
+import './Nav.css';
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation(); // Utilisez le hook useLocation pour obtenir l'URL actuelle
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -28,22 +29,38 @@ const Nav = () => {
 
         <ul className={isMenuOpen ? 'nav-menu open' : 'nav-menu'}>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMenu}>
+            <Link 
+              to="/" 
+              className={`nav-links ${location.pathname === '/' ? 'active' : ''}`} 
+              onClick={closeMenu}
+            >
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMenu}>
+            <Link 
+              to="/about" 
+              className={`nav-links ${location.pathname === '/about' ? 'active' : ''}`} 
+              onClick={closeMenu}
+            >
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/services" className="nav-links" onClick={closeMenu}>
+            <Link 
+              to="/services" 
+              className={`nav-links ${location.pathname === '/services' ? 'active' : ''}`} 
+              onClick={closeMenu}
+            >
               What we do
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-links" onClick={closeMenu}>
+            <Link 
+              to="/contact" 
+              className={`nav-links ${location.pathname === '/contact' ? 'active' : ''}`} 
+              onClick={closeMenu}
+            >
               Contact
             </Link>
           </li>
