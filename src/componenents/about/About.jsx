@@ -1,3 +1,4 @@
+import Footer from '../footer/Footer';
 import Nav from '../nav/Nav';
 import './About.css';
 import Section from './Section';
@@ -65,6 +66,8 @@ const About = () => {
 
 
       </div>
+      <Footer/>
+
     </section>
 
   )

@@ -1,4 +1,5 @@
 import Section from '../about/Section';
+import Footer from '../footer/Footer';
 import Nav from '../nav/Nav'
 import './Service.css';
 const PDF = process.env.PUBLIC_URL + '/Images/COMPANY PROFILE BIK T.pdf';
@@ -144,6 +145,7 @@ const Service = () => {
                 </div>
             </div>
 
+            <Footer/>
 
         </section>
     )

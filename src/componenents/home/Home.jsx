@@ -5,6 +5,7 @@ import { GiFamilyHouse } from "react-icons/gi";
 import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai";
 import Nav from '../nav/Nav';
 import { Link, useNavigate } from 'react-router-dom';
+import Footer from '../footer/Footer';
 const PDF = process.env.PUBLIC_URL + '/Images/COMPANY PROFILE BIK T.pdf';
 
 function Home() {
@@ -165,6 +166,7 @@ function Home() {
 
                 </div>
             </div>
+            <Footer/>
 
         </section>
     )
