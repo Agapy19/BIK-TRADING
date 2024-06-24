@@ -52,7 +52,7 @@ const Nav = () => {
               className={`nav-links ${location.pathname === '/services' ? 'active' : ''}`} 
               onClick={closeMenu}
             >
-              What we do
+              Services
             </Link>
           </li>
           <li className="nav-item">

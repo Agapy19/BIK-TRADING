@@ -2,7 +2,7 @@ import Section from '../about/Section';
 import Footer from '../footer/Footer'
 import Nav from '../nav/Nav'
 import './Service.css';
-import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai";
+const PDF = process.env.PUBLIC_URL + '/Images/COMPANY PROFILE BIK T.pdf';
 
 
 
@@ -26,16 +26,9 @@ const Service = () => {
                         <Section title="Our Activities">
 
                             <p>
-                                BIK TRADING SERVICE are actively engaged in exploring and identifying mineral-rich areas in DRC.
-                            </p>
-                            <p>
-                                Our extraction operations span various types of mining, including underground and open-pit mining techniques.
-                            </p>
-                            <p>
-                                We specialize in processing raw ores to produce high-quality mineral products used in various industries.
-                            </p>
-                            <p>
-                                Our logistics infrastructure ensures efficient transportation and delivery of our products to global markets.
+                                BIK TRADING SERVICE SARL
+                                Clvil Construction company and supplier of various industrial products i.e., electrical,Instrumentation, mechanical, motors, gear boxes, mechanical seals, equipment spares, valves, pressure and temperature transmitters, reagents, chemicals, Personal Protective Equipment (PPE), Conveyor belt accessories.BIK TRADING SERVICE focus on meeting the client's quality requirement of products and services and strive to deliver within the ahortest lead time.
+
                             </p>
                         </Section>
                     </div>
@@ -49,28 +42,87 @@ const Service = () => {
                                 Currently, we are undertaking several strategic mining projects across different geographical locations.
                             </p>
                             <p>
-                                These projects aim to expand our mineral reserves and enhance our operational capabilities.
+                                You name it, we'll supply it
+                                Whatever industrial supplies or services you need - we will deliver first time, on time, every time.
+                                It is our objective to be the leading supplier of the full range of products that mining and other companies or individuals
+                                anywhere in DRC
+                                may need
                             </p>
-                            <p>
-                                Future projects are focused on leveraging advanced technologies to improve mining efficiency and sustainability.
-                            </p>
+
                         </Section>
                     </div>
 
                 </div>
                 <div className='service-page-service'>
 
-                    <h3>Bik trading service can provide the best service</h3>
+                    <h3>Bik trading service can provide the best products</h3>
                     <div className='service-page-service-img'>
-                        <img src={process.env.PUBLIC_URL + '/Images/service1.jpg'} alt="" />
-                        <img src={process.env.PUBLIC_URL + '/Images/service2.jpg'} alt="" />
-                        <img src={process.env.PUBLIC_URL + '/Images/service3.jpg'} alt="" />
-                    </div>
-                    <button className='service-page-service-btn'>
-                        Contact us
-                        <AiOutlineArrowRight className='icone' />
 
-                    </button>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/pump.jpg'} alt="" />
+                            <figcaption>Pump</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/valve.jpg'} alt="" />
+                            <figcaption>Valves</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/electrical.jpg'} alt="" />
+                            <figcaption>Electrical</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/flowmeter.jpg'} alt="" />
+                            <figcaption>Flowmetter</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/conveyor.jpg'} alt="" />
+                            <figcaption>Conveyor belt</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/Geomanta1.jpeg'} alt="" />
+                            <figcaption>Geomembrane</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/equipement.jpg'} alt="" />
+                            <figcaption>Protective equipement</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/pipe.jpg'} alt="" />
+                            <figcaption>Plates and pipe</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/HDPE.jpg'} alt="" />
+                            <figcaption>HDPE pipe</figcaption>
+
+                        </figure>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/Images/crusher.jpg'} alt="" />
+                            <figcaption>Crusher</figcaption>
+
+                        </figure>
+
+
+                    </div>
+                    <a href={PDF} download className='pdf'>
+                        <button className='service-page-service-btn'>
+
+                            Learn more
+
+                        </button>
+
+
+                    </a>
+
+
+
 
 
                 </div>

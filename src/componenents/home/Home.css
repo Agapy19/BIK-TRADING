@@ -1,5 +1,5 @@
 .home-page {
-    background-image: url(/public/Images/image3.jpeg);
+    background-image: url(/public/Images/homebg.jpg);
     display: grid;
     background-position: center;
     background-size: cover;
@@ -11,14 +11,15 @@
     display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 140px;
-    margin-left: 100px;
+    margin-block: 100px;
+    margin-inline: 100px;
 }
 
 .home-page__text h2 {
-    color: var(--main-color);
+    color: #00ff7f;
     font-weight: 600;
-    width: 60%;
+    font-size: 90px;
+    width: auto;
 }
 
 .home-page__text p {
@@ -101,14 +102,10 @@ button:hover {
 .about-home-page__value {
     border-left: 1px solid var(--border-color);
     margin-top: 30px;
-
-
 }
 
 .about-home-page__mission {
     margin-top: 30px;
-
-
 }
 
 .about-home-page__value h2 {
@@ -120,7 +117,7 @@ button:hover {
 }
 
 .icon {
-    margin-left: 150px;
+    margin-left: 200px;
     font-weight: 100;
     color: #bdc3c7;
 }
@@ -216,6 +213,10 @@ button:hover {
 
 .profile-info {
     font-size: 15px;
+}
+.profile-info  h2{
+    font-size: 20px;
+    color: var(--main-color);
 }
 
 .bar {
@@ -421,8 +422,7 @@ button:hover {
     display: flex;
     background-color: #f8f9fa;
     padding: 20px;
-    color: bl;
-    height: 100vh;
+    height: 70vh;
 }
 
 .home-page-pdf-div {
@@ -467,6 +467,264 @@ button:hover {
 .download-icon {
     margin-left: 5px;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-page {
+        background-image: url(/public/Images/homebg.jpg);
+        height: 40vh;
+        width: 100%;
+    }
+    .home-page__text {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        margin-left: 60px;
+    }
+
+    .home-page__text h2 {
+        font-size: 45px;
+    }
+
+    .home-page__text p {
+        color: #FFFF;
+        font-weight: 400;
+        width: 100%;
+        font-size: 30px;
+
+    }
+
+    button {
+        color: var(--text-color);
+        height: 60px;
+        margin-top: 30px;
+        width: 190px;
+        font-size: 25px;
+    }
+
+    .about-home-page {
+        flex-direction: column;
+        margin-left: 5%;
+        width: 90%;
+        height: 60vh;
+        margin-top: -50px;
+        gap: 2%;
+        background: #fff;
+        border: 1px solid var(--border-color);
+        border-radius: 2%;
+
+    }
+
+    .about-home-page__item {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-home-page__item h2 {
+        font-size: 30px;
+        color: #1f1f38;
+        text-align: center;
+    }
+
+    .about-home-page__item p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-home-page__mission {
+
+        border-bottom: 1px solid var(--border-color);
+        margin-top: 5px;
+
+    }
+
+
+    .about-home-page__vison {
+
+        border-bottom: 1px solid var(--border-color);
+        margin-top: 5px;
+
+    }
+
+    .about-home-page__vison p {
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 20px;
+    }
+
+
+    .about-home-page__mission p {
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .about-home-page__value {
+        margin-top: 5px;
+    }
+
+    .about-home-page__mission {
+        margin-top: 5px;
+
+
+    }
+
+
+    .about-home-page__value p {
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .icon {
+        margin-left: 50%;
+        font-weight: 100;
+        color: #bdc3c7;
+    }
+
+
+    .service-home-page h1 {
+        color: var(--main-color);
+        font-size: 50px;
+    }
+
+    .service-home-page p {
+        font-size: 30px;
+    }
+
+    .btn {
+        color: var(--text-color);
+        font-weight: 700 !important;
+        border-radius: 50px !important;
+        height: 60px;
+        margin-top: 30px;
+        width: 200px;
+        font-size: 25px;
+    }
+
+    .founder-home-page {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        height: 90vh;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .founder-home-page__img img {
+        width: 100%;
+        margin-top: 20%;
+        height: 30vh;
+        border-radius: 2%;
+
+    }
+
+    .founder-home-page__text h1 {
+        color: var(--main-color);
+        margin-left: 10%;
+        font-size: 80px;
+    }
+
+    .founder-home-page__text p {
+        margin-left: 10%;
+        font-size: 25px;
+    }
+
+    .founder-home-page__text {
+        height: 70vh;
+        background: #FFFF;
+        margin-left: 5%;
+        width: 90%;
+        margin-top: -50px;
+        border-radius: 3%;
+
+
+    }
+
+    
+
+    .founder-profile {
+        display: flex;
+        gap: 10px;
+        margin-left: 10%;
+        margin-top: 9%;
+
+    }
+
+    .founder-profile img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: #bdc3c7;
+        margin-top: -4%;
+
+    }
+
+    .profile-info  h2{
+        font-size: 30px;
+        color: var(--main-color);
+        margin-top: -15px;
+    }
+    .home-page-presentation {
+        display: none;
+        height: 60vh;
+    }
+   
+        .home-page-pdf {
+        display: flex;
+        background-color: none;
+        padding: 10px;
+        height: 50vh;
+    }
+    
+    .home-page-pdf-div {
+        width: 80%;
+        height: 80%;
+        background-color: #FFFFFF;
+        margin: 0 auto; 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+       
+    }
+    .home-page-pdf-div h2{
+        background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 100%;
+        text-align: center;
+        margin-top: 60px; 
+    }
+    .home-page-pdf-img img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .pdf {
+        color: #00bfff;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        margin-top: -90px;
+    }
+    
+    .pdf:hover {
+        text-decoration: underline;
+        color: #1e90ff;
+    }
+    
+    .download-icon {
+        margin-left: 5px;
+        font-size: 50px;
+    }
+    
+    
+    
+
 }
 
 

@@ -3,6 +3,8 @@ import './Contact.css';
 import { MdOutlineEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import Nav from '../nav/Nav';
+import Footer from '../footer/Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +32,7 @@ const Contact = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/mkgwwzzk', {
         method: 'POST',
         body: formData,
         headers: {
@@ -55,6 +57,8 @@ const Contact = () => {
 
   return (
     <section className='contact'>
+      <Nav />
+
       <h2>Let's talk with us!</h2>
       <div className="container contact-container">
         <div className="contact-options">
@@ -65,7 +69,7 @@ const Contact = () => {
             <a href="mailto:biktradingservice@gmail.com">Envoyez-moi un message</a>
           </article>
           <article className="contact-option">
-            <FaWhatsapp className='contact-option__icon'/>
+            <FaWhatsapp className='contact-option__icon' />
             <h4>WhatsApp</h4>
             <h5>+243 824 663 434</h5>
           </article>
@@ -78,26 +82,26 @@ const Contact = () => {
         </div>
 
         <form onSubmit={handleSubmit}>
-          <input 
-            type="text" 
-            name="name" 
-            placeholder="Your full name" 
-            onChange={handleChange} 
-            required 
+          <input
+            type="text"
+            name="name"
+            placeholder="Your full name"
+            onChange={handleChange}
+            required
           />
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Your email" 
-            onChange={handleChange} 
-            required 
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            onChange={handleChange}
+            required
           />
-          <textarea 
-            name="message" 
-            rows="7" 
-            placeholder="How can we help you?" 
-            onChange={handleChange} 
-            required 
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="How can we help you?"
+            onChange={handleChange}
+            required
           ></textarea>
           <button type="submit" className="button btn-primary" disabled={isSending}>
             {isSending ? 'Sending...' : 'Envoyer'}
@@ -105,6 +109,8 @@ const Contact = () => {
         </form>
         {responseMessage && <p className="success-message">{responseMessage}</p>}
       </div>
+      <Footer />
+
     </section>
   );
 }

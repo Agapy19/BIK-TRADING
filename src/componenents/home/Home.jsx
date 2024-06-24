@@ -52,7 +52,7 @@ function Home() {
                         <h2 className="gradient-text">Your partner for responsible mining</h2>
                         <p>Trust BIK TRADING SERVICE SARL !</p>
                         <Link to="/About">
-                        <button>Discover us</button>
+                            <button>Discover us</button>
 
                         </Link>
                     </div>
@@ -86,7 +86,11 @@ function Home() {
                     <p>We have accomplished this by not only suppling,and maintaining quality products we also take.
                         The time to listen to our customers and help them find solution to their specific needs
                     </p>
+                    <Link to="/Services">
                     <button className='btn'>Learn more</button>
+
+
+                        </Link>
                 </div>
                 <div className="founder-home-page">
                     <div className="founder-home-page__img">
@@ -99,7 +103,7 @@ function Home() {
                         <div className="founder-profile">
                             <img src={process.env.PUBLIC_URL + ''} />
                             <div className="profile-info">
-                                <h2>Diego Cao</h2>
+                                <h2>Brialy Kasongo</h2>
                                 <p>Founder</p>
                             </div>
                         </div>
@@ -110,13 +114,13 @@ function Home() {
                         <h2>Get ready for the future</h2>
                         <p>Grow your career, transform our industry and improve lives</p>
                         <Link to="/Contact">
-                        <button className='home-page-presentation-flex-btn'>
-                            <span>Contact us</span>
-                            <AiOutlineArrowRight className='icone' />
-                        </button>
+                            <button className='home-page-presentation-flex-btn'>
+                                <span>Contact us</span>
+                                <AiOutlineArrowRight className='icone' />
+                            </button>
 
                         </Link>
-                        
+
                     </div>
                     <div className="home-page-presentation-grid">
                         <div className='home-page-presentation-grid1'>
@@ -127,18 +131,22 @@ function Home() {
                         </div>
                         <div className='home-page-presentation-grid3'>
                             <h2>Welcome Everyone</h2>
-                            <button className='home-page-presentation-grid3-btn'>Learn More</button>
+                            <Link to="/About">
+
+                                <button className='home-page-presentation-grid3-btn'>Learn More</button>
+
+                            </Link>
                         </div>
                         <div className='home-page-presentation-grid4'>
-                        <Link to="/Contact">
-                        <button className='home-page-presentation-grid4-btn'>
-                                Contact us
-                                <AiOutlineArrowRight className='icone' />
+                            <Link to="/Contact">
+                                <button className='home-page-presentation-grid4-btn'>
+                                    Contact us
+                                    <AiOutlineArrowRight className='icone' />
 
-                            </button>
+                                </button>
 
-                        </Link>
-                            
+                            </Link>
+
                         </div >
                         <div className='home-page-presentation-grid5'>
                             <h2>90% of employees would recommend to a friend</h2>
@@ -148,7 +156,7 @@ function Home() {
                 </div>
                 <div className="home-page-pdf">
                     <div className="home-page-pdf-div">
-                        <h2>Integrated  report </h2>
+                        <h2>Download our profile </h2>
                         <a href={PDF} download className='pdf'>
                             Download pdf
                             <AiOutlineDownload className='download-icon' />

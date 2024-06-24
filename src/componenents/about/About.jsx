@@ -14,12 +14,8 @@ const About = () => {
         <div className='about-page__item'>
 
           <h2 className='titre'>About Us</h2>
-          <p>BIK TRADING ISCE wa incorporacted as a congolese company in the year 2021.
-            Under registraction number CD/LSH/RCCM/22-B-01930,
-            Tax registration number A220659T,
-            I.D, NAT 05-F200-NO5832T,
-            Construction company and supplier of various industrial products i.e., electrical,
-          </p>
+          <p>BIK TRADING SERVICE was Incorporated as a congolese company in the year 2021CD/LSH/RCCM/22-B-01930,
+          Tax registration number A22065951, I.D, NAT 05-F4200-N05832T as a Clvil Construction company and supplier of various industrial products i.e. </p>
         </div>
         <Section title=" Our Company">
           <p className='paragraphe'>
@@ -30,7 +26,7 @@ const About = () => {
           </p>
         </Section>
         <div className="about-page-philosophy">
-          <h2 className='title'>OUR PHILOSOPHY </h2>
+          <h2 className='title'>Our  philosophy </h2>
 
           <div className="about-page-philosophy__philosophy">
             <div className="about-page-philosophy__vision">
@@ -64,6 +60,10 @@ const About = () => {
           <p className='paragraphe'>
             We utilize advanced technologies to enhance efficiency and reduce environmental impact of our operations.
           </p>
+        </Section>
+
+        <Section title="Collaborators">
+
         </Section>
 
 

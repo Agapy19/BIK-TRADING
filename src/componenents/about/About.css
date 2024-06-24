@@ -1,5 +1,5 @@
 .about-us-page{
-    background-image: url(/public/Images/about.jpg);
+    background-image: url(/public/Images/aboutbg.jpg);
     display: grid;
     background-position: center;
     background-size: cover;
@@ -9,12 +9,13 @@
 .about-page__item{
     margin-left: 10%;
     width: 80%;
-    height: 50vh;
-    margin-top: -50px;
+    height: auto;
+    margin-top: -150px;
     gap: 2%;
     background: #fff;
-    border-radius: 2%;
+    border-radius: 3%;
     border: 1px solid var(--border-color);
+    padding: 30px;
 }
 
 .about-page-philosophy{
@@ -34,9 +35,11 @@
 
 }
 .titre{
-   
+    background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     width: 100%;
-    margin-top: 60px; 
+    margin-top: 1px; 
     text-align: start;
     font-weight: 500;
 
@@ -67,15 +70,13 @@
     top: 0;
     left: 5%;
     transform: translate(50%, -20%);
-    z-index: 2;
 }
 
 .about-page-philosophy__mision {
     background-color: #1e90ff;
     top: 80%;
     left: 25%;
-    transform: translate(45%, -20%);
-    z-index: 2;
+    transform: translate(20%, -20%);
      
 }
 
@@ -83,8 +84,7 @@
     background-color:#00ff7f ;
     top: -50%;
     left: 75%;
-    transform: translate(-95%, 40%);
-    z-index: 1;
+    transform: translate(-150%, 40%);
 }
 .about-page-philosophy__philosophy h2{
 color: #fff;
@@ -179,7 +179,7 @@ color: #fff;
         background-color:#00ff7f ;
         top: -50%;
         left: 75%;
-        transform: translate(-130%, 40%);
+        transform: translate(-70%, 40%);
         z-index: 1;
     }
    
