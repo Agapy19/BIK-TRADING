@@ -528,7 +528,7 @@ button:hover {
     }
 
     .about-home-page__item p {
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
     }
 
@@ -731,65 +731,44 @@ button:hover {
 
 @media screen and (max-width: 700px) {
     .home-page {
-        background-image: url(/public/Images/image3.jpeg);
-        display: grid;
-        background-position: center;
-        background-size: cover;
-        height: 50vh;
+        background-image: url(/public/Images/homebg.jpg);
+        height: 40vh;
         width: 100%;
     }
     .home-page__text {
         display: block;
         justify-content: center;
         align-items: center;
-        margin-top: 90px;
-        margin-left: 50px;
+        margin-top: 30px;
+        margin-left: 60px;
     }
 
     .home-page__text h2 {
-        font-weight: 800;
-        width: 100%;
         font-size: 25px;
+        width: 100%;
     }
 
     .home-page__text p {
         color: #FFFF;
         font-weight: 400;
-        width: 60%;
-        font-size: 15px;
         width: 100%;
+        font-size: 10px;
 
     }
 
     button {
         color: var(--text-color);
-        font-weight: 700 !important;
-        border-radius: 50px !important;
-        height: 45px;
+        height: 50px;
         margin-top: 30px;
         width: 170px;
-        cursor: pointer;
-        display: inline-block;
-        padding: 0.75rem 1.2rem;
-        text-align: center;
-        font-size: 15px;
-        padding: 0.75rem 1.2rem;
-        border: 1px solid var(--main-color);
-        transition: var(--transition);
-        background-color: var(--main-color);
-    }
-
-    button:hover {
-        background: #fff;
-        border: 1px solid var(--main-color);
-        color: var(--main-color);
+        font-size: 20px;
     }
 
     .about-home-page {
         flex-direction: column;
         margin-left: 5%;
         width: 90%;
-        height: 100vh;
+        height: 75vh;
         margin-top: -50px;
         gap: 2%;
         background: #fff;
@@ -800,24 +779,25 @@ button:hover {
 
     .about-home-page__item {
         width: 100%;
-        height: 40vh;
+        height: auto;
     }
 
     .about-home-page__item h2 {
-        font-size: 20px;
+        font-size: 18px;
         color: #1f1f38;
         text-align: center;
     }
 
     .about-home-page__item p {
-        font-size: 15px;
+        font-size: 10px;
         text-align: center;
+        margin-top: -5px;
     }
 
     .about-home-page__mission {
 
         border-bottom: 1px solid var(--border-color);
-        margin-top: 10px;
+        margin-top: 5px;
 
     }
 
@@ -825,73 +805,69 @@ button:hover {
     .about-home-page__vison {
 
         border-bottom: 1px solid var(--border-color);
-        margin-top: 10px;
+        margin-top: 2px;
 
     }
 
     .about-home-page__vison p {
-        margin-left: 25px;
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 10px;
     }
 
-    .about-home-page__mission h2 {
-        text-align: center;
-    }
 
     .about-home-page__mission p {
-        margin-left: 20px;
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 10px;
     }
 
     .about-home-page__value {
-        margin-top: 10px;
-
-
+        margin-top: 2px;
     }
 
     .about-home-page__mission {
-        margin-top: 10px;
+        margin-top: 2px;
 
 
     }
 
-    .about-home-page__value h2 {
-        text-align: center;
-    }
 
     .about-home-page__value p {
-        margin-left: 20px;
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 10px;
     }
 
     .icon {
-        margin-left: 175px;
+        margin-left: 48%;
         font-weight: 100;
         color: #bdc3c7;
     }
 
 
-    .service-home-page {
-        margin-top: 30px;
-        margin-left: 70px
-    }
-
     .service-home-page h1 {
         color: var(--main-color);
-        font-size: 40px;
+        font-size: 30px;
+        margin-left: -30%;
+
     }
 
     .service-home-page p {
+        font-size: 16px;
         width: 100%;
-        margin-top: 20px;
-        color: var(--primary-color);
-        font-size: 15px;
+        margin-left: -30%;
+
+
     }
 
     .btn {
         color: var(--text-color);
         font-weight: 700 !important;
         border-radius: 50px !important;
-        height: 45px;
+        height: 40px;
         margin-top: 30px;
-        width: 170px;
+        width: 150px;
         cursor: pointer;
         display: inline-block;
         padding: 0.75rem 1.2rem;
@@ -901,13 +877,15 @@ button:hover {
         border: 1px solid var(--main-color);
         transition: var(--transition);
         background-color: var(--main-color);
+        margin-left: -30%;
+
     }
 
     .founder-home-page {
         display: flex;
         flex-direction: column;
         margin-top: 2%;
-        height: 120vh;
+        height: 70vh;
         width: 100%;
         grid-template-columns: 1fr 1fr;
     }
@@ -915,55 +893,55 @@ button:hover {
     .founder-home-page__img img {
         width: 100%;
         margin-top: 20%;
-        height: 40vh;
+        height: 20vh;
         border-radius: 2%;
 
     }
 
     .founder-home-page__text h1 {
         color: var(--main-color);
-        margin-left: 10%;
+        margin-left: 5%;
+        font-size: 40px;
     }
 
     .founder-home-page__text p {
-        margin-left: 10%;
-        font-size: 16px;
+        margin-left: 5%;
+        font-size: 10px;
     }
 
     .founder-home-page__text {
-        height: 70vh;
+        height: 50vh;
         background: #FFFF;
-        margin-left: 5%;
-        width: 90%;
+        margin-left: 10%;
+        width: 80%;
         margin-top: -50px;
         border-radius: 3%;
 
 
     }
-
-    .close {
-        margin-left: 550%;
-    }
+    
 
     .founder-profile {
         display: flex;
         gap: 10px;
-        margin-left: 10%;
+        margin-left: 5%;
         margin-top: 9%;
 
     }
 
     .founder-profile img {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
         background: #bdc3c7;
         margin-top: -4%;
 
     }
 
-    .profile-info {
-        font-size: 15px;
+    .profile-info  h2{
+        font-size: 18px;
+        color: var(--main-color);
+        margin-top: -5px;
     }
     .home-page-presentation {
         display: none;
@@ -973,19 +951,20 @@ button:hover {
         .home-page-pdf {
         display: flex;
         background-color: none;
-        padding: 10px;
-        height: 50vh;
+        padding: 5px;
+        height: 40vh;
     }
     
     .home-page-pdf-div {
-        width: 80%;
-        height: 80%;
+        width: 50%;
+        height: 70%;
         background-color: #FFFFFF;
         margin: 0 auto; 
         display: grid;
         justify-content: center;
         align-items: center;
         margin-top: 5%;
+
        
     }
     .home-page-pdf-div h2{
@@ -994,7 +973,8 @@ button:hover {
         -webkit-text-fill-color: transparent;
         width: 100%;
         text-align: center;
-        margin-top: 60px; 
+        margin-top: 40px; 
+        font-size: 18px;
     }
     .home-page-pdf-img img{
         width: 100px;
@@ -1007,8 +987,8 @@ button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 16px;
-        margin-top: -50px;
+        font-size: 10px;
+        margin-top: -70px;
     }
     
     .pdf:hover {
@@ -1018,7 +998,7 @@ button:hover {
     
     .download-icon {
         margin-left: 5px;
-        font-size: 20px;
+        font-size: 30px;
     }
     
     

@@ -1,4 +1,3 @@
-import Footer from '../footer/Footer';
 import Nav from '../nav/Nav';
 import './About.css';
 import Section from './Section';
@@ -62,13 +61,10 @@ const About = () => {
           </p>
         </Section>
 
-        <Section title="Collaborators">
 
-        </Section>
 
 
       </div>
-      <Footer/>
     </section>
 
   )
