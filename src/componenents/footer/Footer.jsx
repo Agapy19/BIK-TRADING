@@ -22,9 +22,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-section social-media">
                     <h4>Follow Us</h4>
-                    <a href="https://facebook.com/miningcorp" className="footer-link">Facebook</a>
-                    <a href="https://twitter.com/miningcorp" className="footer-link">Twitter</a>
-                    <a href="https://linkedin.com/company/miningcorp" className="footer-link">LinkedIn</a>
+                    <a href="https://" className="footer-link">Facebook</a>
+                    <a href="https://twitter" className="footer-link">Twitter</a>
+                    <a href="https://linkedin" className="footer-link">LinkedIn</a>
                 </div>
                 <div className="footer-section newsletter">
                     <h4>Contact Us</h4>

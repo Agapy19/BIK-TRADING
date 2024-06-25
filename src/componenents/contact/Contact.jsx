@@ -46,10 +46,10 @@ const Contact = () => {
       } else {
         const result = await response.json();
         const error = result.error || 'Unknown error';
-        alert(`Failed to send email: ${error}`);
+        alert(`Votre message n'as  pas été envoyer veuillez réessayer: ${error}`);
       }
     } catch (error) {
-      alert(`Failed to send email: ${error.message}`);
+      alert(`Votre message n'as  pas été envoyer veuillez réessayer: ${error.message}`);
     } finally {
       setIsSending(false);
     }

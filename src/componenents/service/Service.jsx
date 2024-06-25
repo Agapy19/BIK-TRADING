@@ -111,6 +111,8 @@ const Service = () => {
 
 
                     </div>
+
+
                     <a href={PDF} download className='pdf'>
                         <button className='service-page-service-btn'>
 
@@ -127,25 +129,21 @@ const Service = () => {
 
                 </div>
                 <div className='service-page-activity'>
-                    <img src={process.env.PUBLIC_URL + '/Images/technology.jpg'} alt="" />
+                    <img src={process.env.PUBLIC_URL + 'Images/image3.jpeg'} alt="" />
                     <div className='service-page-activity-activities'>
-                        <Section title="Innovation and Technology">
+                        <Section title="Last delivery">
                             <p>
-                                Innovation is at the core of our operations, driving advancements in mining technologies.
+                            Having an excellent relationship with local and international suppliers, BIK trading will deliver the correct equipment and supplies safely, and within the correct time frame to site, allowing our customers piece of mind and to concentrate on their core business.
+
                             </p>
-                            <p>
-                                We invest in research and development to adopt cutting-edge solutions for sustainable mining practices.
-                            </p>
-                            <p>
-                                Our commitment to technological innovation ensures that we remain competitive and environmentally responsible.
-                            </p>
+                            
                         </Section>
                     </div>
 
                 </div>
             </div>
 
-            <Footer/>
+            <Footer />
 
         </section>
     )
