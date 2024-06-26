@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Contact.css';
 import { MdOutlineEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -71,8 +71,8 @@ const Contact = () => {
             <h5>+243 824 663 434</h5>
           </article>
           <article className="contact-option">
-            <FaInstagramSquare className='contact-option__icon' />
-            <h4>Instagram</h4>
+            <FaLinkedin className='contact-option__icon' />
+            <h4>Linkedin</h4>
             <h5>BIK TRADING SERVICE</h5>
             <a href="">Envoyez-moi un message</a>
           </article>
