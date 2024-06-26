@@ -8,39 +8,41 @@ const Footer = () => {
         <footer className="footer-container">
             <div className="footer-content">
                 <div className="footer-section company-info">
-                    <h4>Bik Trading</h4>
-                    <p>45, Route du Golf, </p>
-                    <p>Q/ Golf Fina, C/ Lubumbashi</p>
+                    <h4>BIK TRADING OFFICE</h4>
+                    <ul className='adress-list'>
+                        <p>Physical adress:</p>
+                        <div>
+                            <li>45, Route du Golf,Q/ Golf Fina C/ Lubumbashi</li>
+                        </div>
+
+                    </ul>
+
                     <ul className="email-list">
-                        <li>Info@biktradingservice.com</li>
-                        <li>biktradingservice@gmail.com</li>
+                        <p>Email:</p>
+                        <div className="email-list-li">
+                            <li>Info@biktradingservice.com</li>
+                            <li>biktradingservice@gmail.com</li>
+                        </div>
+
                     </ul>
                     <ul className="phone-list">
-                        <li>+243 997 595 555</li>
-                        <li>+243 824 663 434</li>
+                        <p>Tel: </p>
+                        <div className="phone-list-li">
+                            <li>(+243) 997 595 555</li>
+                            <li>(+243) 824 663 434</li>
+                        </div>
+
                     </ul>
                 </div>
                 <div className="footer-section social-media">
-                    <h4>Follow Us</h4>
-                    <a href="https://" className="footer-link">Facebook</a>
-                    <a href="https://twitter" className="footer-link">Twitter</a>
-                    <a href="https://linkedin" className="footer-link">LinkedIn</a>
-                </div>
-                <div className="footer-section newsletter">
-                    <h4>Contact Us</h4>
-                    <p>We are here to help you ! Do not hesitate to contact us if you have any questions, comments or if you would like to know more about our services</p>
-                    <form>
-                        <Link to="/Contact">
-                            <button className="footer-button">Contact Us</button>
+                    <h4 className='social-media-title'>Follow Us</h4>
+                    <a href="https://" className="footer-link">Linkedin</a>
 
 
-
-                        </Link>
-                    </form>
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; 2024 Bik Trading Sarl. All rights reserved.</p>
+                <p>&copy; 2022 Bik Trading Sarl. All rights reserved.</p>
             </div>
         </footer>
     );

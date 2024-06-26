@@ -3,8 +3,6 @@ import './Contact.css';
 import { MdOutlineEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import Nav from '../nav/Nav';
-import Footer from '../footer/Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -57,7 +55,6 @@ const Contact = () => {
 
   return (
     <section className='contact'>
-      <Nav />
 
       <h2>Let's talk with us!</h2>
       <div className="container contact-container">
@@ -109,7 +106,6 @@ const Contact = () => {
         </form>
         {responseMessage && <p className="success-message">{responseMessage}</p>}
       </div>
-      <Footer />
 
     </section>
   );

@@ -1,27 +1,29 @@
-.about-us-page {
-    background-image: url(/public/Images/aboutbg.jpg);
-    display: grid;
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
-    width: 100%;
-}
+
 
 .about-page__item {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin-top: -150px;
+    margin-top: 50px;
     gap: 2%;
-    background: #fff;
-    border-radius: 3%;
-    border: 1px solid var(--border-color);
     padding: 30px;
 }
+.about-page__item p{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 8%;
 
-.about-page-philosophy {
-    display: grid;
-    height: 100vh;
 }
+.about-page ul {
+    list-style-type: disc;
+    margin-left: 10%;
+
+  }
+  
+  .about-page li {
+    margin-bottom: 5px;
+  }
+
 
 .title {
     margin-left: 10%;
@@ -31,9 +33,20 @@
     width: 100%;
     margin-top: 60px;
     text-align: start;
-    margin-left: 10%;
+    margin-left: 50%;
     font-weight: 500;
 
+}
+.paragraphe{
+    margin-left: 10%;
+    width: 60%;
+}
+ul{
+    margin-left: 10%;
+}
+.list{
+list-style-type: disc;
+margin-left: 2%;
 }
 
 .titre {
@@ -44,93 +57,38 @@
     margin-top: 1px;
     text-align: start;
     font-weight: 500;
+    margin-left: 35%;
 
 }
 
-.about-page-philosophy__philosophy {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.about-page-philosophy__vision,
-.about-page-philosophy__mision,
-.about-page-philosophy__value {
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    margin-top: -10%;
-}
-
-.about-page-philosophy__vision {
-    background-color: #00bfff;
-    top: 0;
-    left: 5%;
-    transform: translate(50%, -20%);
-}
-
-.about-page-philosophy__mision {
-    background-color: #1e90ff;
-    top: 80%;
-    left: 25%;
-    transform: translate(20%, -20%);
-
-}
-
-.about-page-philosophy__value {
-    background-color: #00ff7f;
-    top: -50%;
-    left: 75%;
-    transform: translate(-150%, 40%);
-}
-
-.about-page-philosophy__philosophy h2 {
-    color: #fff;
-}
-
-.paragraphe {
-    margin-left: 10%;
-    width: 70%;
-}
 
 @media screen and (max-width: 1024px) {
-    .about-us-page {
-        height: 40vh;
-        width: 100%;
-    }
-
     .about-page__item {
-        margin-left: 10%;
+        width: 100%;
         height: auto;
+        margin-top: 15%;
         gap: 2%;
-        border-radius: 3%;
+        padding: 10px;
     }
-
-    .about-page__item h2 {
-        font-size: 30px;
-        margin-top: -20px;
-    }
-
-    .about-page__item p {
-        font-size: 30px;
+    .about-page__item p{
         width: 80%;
-        margin-left: 10%;
+        height: auto;
         margin-top: 20px;
+        margin-left: 10%;
+        font-size: 20px;
+    
     }
-
-    .about-page-philosophy {
-        display: grid;
-        height: 80vh;
-    }
-
+    .about-page ul {
+        list-style-type: disc;
+        margin-left: 10%;
+    
+      }
+      
+      .about-page li {
+        margin-bottom: 5px;
+      }
+    
+    
     .title {
         margin-left: 10%;
         background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
@@ -139,175 +97,110 @@
         width: 100%;
         margin-top: 60px;
         text-align: start;
-        margin-left: 10%;
+        margin-left: 50%;
         font-weight: 500;
-        font-size: 40px;
-
     }
-
+    .paragraphe{
+        height: auto;
+        margin-top: 20px;
+        margin-left: 9%;
+        font-size: 20px;
+        width: 80%;
+    }
+    ul{
+        margin-left: 10%;
+    }
+    .list{
+    list-style-type: disc;
+    margin-left: 2%;
+    font-size: 20px;
+    }
+    
     .titre {
         background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-top: 30px;
-        font-size: 30px;
-        margin-left: 10%;
-
-
+        width: 100%;
+        margin-top: 1px;
+        text-align: center;
+        font-weight: 900;
+        margin-left: 0%;
+        font-size: 60px;
+    
     }
-
-    .about-page-philosophy__philosophy {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .about-page-philosophy__vision,
-    .about-page-philosophy__mision,
-    .about-page-philosophy__value {
-        border-radius: 50%;
-        width: 300px;
-        height: 300px;
-        padding: 10px;
-        color: white;
-        font-family: Arial, sans-serif;
-        font-size: 18px;
-        margin-top: -50%;
-        margin-left: -20%;
-
-
-    }
-
-    .about-page-philosophy__vision {
-        background-color: #00bfff;
-        transform: translate(65%, -40%);
-        z-index: 2;
-    }
-
-    .about-page-philosophy__mision {
-        background-color: #1e90ff;
-        top: 80%;
-        left: 25%;
-        transform: translate(40%, -40%);
-        z-index: 2;
-
-    }
-
-    .about-page-philosophy__value {
-        background-color: #00ff7f;
-        top: -50%;
-        left: 75%;
-        transform: translate(-100%, 38%);
-        z-index: 1;
-    }
-
-    .paragraphe {
-        margin-left: 10%;
-        width: 70%;
-        font-size: 30px;
-    }
-
 }
 
 @media screen and (max-width: 700px) {
-    .about-us-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
 
-    .about-page__item {
-        height: auto;
-        gap: 2%;
-        border-radius: 3%;
-        margin-top: -110px;
+.about-page__item {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    gap: 2%;
+    padding: 10px;
+}
+.about-page__item p{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 1%;
+    font-size: 15px;
 
-    }
+}
+.about-page__item h2{
+   
+    font-size: 40px;
 
-    .about-page__item p {
-        font-size: 10px;
-        width: 100%;
-        margin-left: 0%;
-        padding-inline: 10px;
-    }
+}
+.about-page ul {
+    list-style-type: disc;
+    margin-left: 10%;
 
-    .about-page-philosophy {
-        display: grid;
-        height: 80vh;
-    }
-
-    .title {
-        margin-left: 10%;
-        background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        width: 100%;
-        margin-top: 80px;
-        text-align: start;
-        margin-left: 10%;
-        font-weight: 500;
-        font-size: 20px;
-
-    }
-
-    .titre {
-        background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-top: 20px;
-        font-size: 18px;
-        margin-left: 0%;
+  }
+  
+  .about-page li {
+    margin-bottom: 5px;
+  }
 
 
-    }
+.title {
+    margin-left: 10%;
+    background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    margin-top: 60px;
+    text-align: start;
+    margin-left: 50%;
+    font-weight: 500;
+}
+.paragraphe{
+    height: auto;
+    margin-top: 20px;
+    margin-left: 6%;
+    font-size: 15px;
+    width: 90%;
+}
+ul{
+    margin-left: 10%;
+}
+.list{
+list-style-type: disc;
+margin-left: 2%;
+font-size: 15px;
+}
 
-    .about-page-philosophy__philosophy {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+.titre {
+    background: linear-gradient(90deg, #1e90ff, #00bfff, #00ff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 90%;
+    margin-top: 1px;
+    text-align: center;
+    font-weight: 900;
+    margin-left: 0%;
+    font-size: 30%;
 
-    .about-page-philosophy__vision,
-    .about-page-philosophy__mision,
-    .about-page-philosophy__value {
-        border-radius: 50%;
-        width: 190px;
-        height: 190px;
-        padding: 0px;
-        color: white;
-        font-family: Arial, sans-serif;
-        font-size: 10px;
-        margin-top: -10%;
-        margin-left: 2%;
-
-    }
-
-    .about-page-philosophy__vision {
-        background-color: #00bfff;
-        transform: translate(40%, 40%);
-        z-index: 2;
-    }
-
-    .about-page-philosophy__mision {
-        background-color: #1e90ff;
-        top: 80%;
-        left: 25%;
-        transform: translate(-40%, -40%);
-        z-index: 2;
-
-    }
-
-    .about-page-philosophy__value {
-        background-color: #00ff7f;
-        top: -50%;
-        left: 75%;
-        transform: translate(-10%, -40%);
-        z-index: 2;
-    }
-
-    .paragraphe {
-        margin-left: 10%;
-        width: 80%;
-        font-size: 10px;
-    }
+}   
 }

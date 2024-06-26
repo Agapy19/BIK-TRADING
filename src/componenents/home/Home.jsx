@@ -3,9 +3,7 @@ import { BiWorld } from "react-icons/bi";
 import { FaHandsHelping } from "react-icons/fa";
 import { GiFamilyHouse } from "react-icons/gi";
 import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai";
-import Nav from '../nav/Nav';
 import { Link, useNavigate } from 'react-router-dom';
-import Footer from '../footer/Footer';
 const PDF = process.env.PUBLIC_URL + '/Images/COMPANY PROFILE BIK T.pdf';
 
 function Home() {
@@ -44,20 +42,21 @@ function Home() {
 
     return (
         <section>
-            <Nav />
 
             <div className='home'>
                 <div className='home-page'>
-                    <div className="home-page__text">
+                    <img src={process.env.PUBLIC_URL + '/Images/homebg.jpg'} alt="" />
+
+                    {/*  <div className="home-page__text">
                         <h2 className="gradient-text">Your partner for responsible mining</h2>
                         <p>Trust BIK TRADING SERVICE SARL !</p>
                         <Link to="/About">
                             <button>Discover us</button>
 
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
-                <div className='about-home-page'>
+                {/*   <div className='about-home-page'>
                     <div className='about-home-page__item'>
                         <div className='about-home-page__mission'>
                             <FaHandsHelping className='icon' />
@@ -79,20 +78,21 @@ function Home() {
                             <p>Our performance-oriented culture and responsible approach from the foundations of our business depends on our creativity,dedication and performance</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="service-home-page">
-                    <h1>What we do</h1>
-                    <p>We have accomplished this by not only suppling,and maintaining quality products we also take.
-                        The time to listen to our customers and help them find solution to their specific needs
+                    <h1>BIK TRADING SERVICE</h1>
+                    <p>BIK TRADING SERVICE was Incorporated as a congolese company in the year 2021CD/LSH/RCCM/22-B-01930, Tax registration number A22065951, I.D, NAT 05-F4200-N05832T as a Clvil Construction company and supplier of various industrial products i.e.
                     </p>
+                    <p> BIK TRADING SERVICE adds value and piece of mind to operations in the mining, exploration and civil engineering industries that rely on moving equipment and related supplies to all parts of Africa. Having an excellent relationship with local and international suppliers, Total Mining will deliver the correct equipment and supplies safely, and within the correct time frame to site, allowing our customers piece of mind and to concentrate on their core business.</p>
+
                     <Link to="/Services">
-                    <button className='btn'>Learn more</button>
+                        <button className='btn'>Learn more</button>
 
 
-                        </Link>
+                    </Link>
                 </div>
-                <div className="founder-home-page">
+                {/*  <div className="founder-home-page">
                     <div className="founder-home-page__img">
                         <img src={process.env.PUBLIC_URL + '/Images/image3.jpeg'} alt="" />
                     </div>
@@ -153,7 +153,7 @@ function Home() {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
                 <div className="home-page-pdf">
                     <div className="home-page-pdf-div">
                         <h2>Download our profile </h2>
@@ -166,7 +166,6 @@ function Home() {
 
                 </div>
             </div>
-            <Footer/>
 
         </section>
     )

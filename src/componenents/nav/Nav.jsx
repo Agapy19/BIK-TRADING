@@ -19,6 +19,7 @@ const Nav = () => {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <img src={process.env.PUBLIC_URL + '/Images/logobik.jpg'} alt="BIK TRADING SARL" className="logo-img" />
+          <p>BIK-Trading</p>
         </Link>
 
         <div className="menu-icon" onClick={toggleMenu}>
@@ -52,7 +53,18 @@ const Nav = () => {
               className={`nav-links ${location.pathname === '/services' ? 'active' : ''}`} 
               onClick={closeMenu}
             >
-              Services
+              Product
+            </Link>
+          </li>
+
+          <li className="nav-item">
+
+            <Link 
+              to="/galery" 
+              className={`nav-links ${location.pathname === '/galery' ? 'active' : ''}`} 
+              onClick={closeMenu}
+            >
+              Galery
             </Link>
           </li>
           <li className="nav-item">
@@ -66,6 +78,7 @@ const Nav = () => {
           </li>
         </ul>
       </div>
+      
     </nav>
   );
 };
